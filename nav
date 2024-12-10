@@ -1,0 +1,5 @@
+<nav>
+        <Link routeName="home">Home</Link> |{" "}
+        <Link routeName="settings">Settings</Link> |{" "}
+        <Link routeName="about">About</Link>
+      </nav>

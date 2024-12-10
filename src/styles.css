@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+  color: var(--tg-theme-link-color);
+}
+
+iframe.nobord {
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  weight: auto;
+  height: auto;
+}

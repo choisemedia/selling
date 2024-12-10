@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  align-items: center;
+  background: #f4f4f5;
+  color: var(--tg-theme-text-color);
+  flex-direction: column;
+  display: flex;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+}
+.header {
+  background: var(--tg-theme-bg-color);
+  border-radius: 35px;
+  padding: 0px;
+}
+
+.hint {
+  color: var(--tg-theme-hint-color);
+}
+.link {
+  color: var(--tg-theme-link-color);
+}
+.button {
+  background: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  border: none;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.button:not(:last-child) {
+  margin-bottom: 50px;
+}
+.container {
+  padding: 0px;
+  margin: 0;
+}
+.usercard {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 23px;
+  margin-left: 14px;
+  margin-right: 17px;
+}
+.userphoto {
+  width: 62px;
+  height: 62px;
+  margin-top: 12px;
+  margin-left: 8px;
+  margin-bottom: 17px;
+
+  border-radius: 35px;
+}
+.btnurl {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 62px;
+}
+.widget-logo {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 1px;
+  display: inline;
+  width: 32px;
+  height: 32px;
+}
+.widget-text {
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 6px;
+  margin-left: 4px;
+  width: 100px;
+  height: 17px;
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16.856px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  font-weight: 550;
+  vertical-align: 80%;
+}
+
+.widget-text-low {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  white-space: nowrap;
+  color: rgb(166, 166, 166);
+  font-size: 10px;
+  width: 100px;
+  height: 17px;
+  margin-top: 24px;
+  margin-left: -100px;
+}
+
+.tgbutton {
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  margin-right: 0px;
+  border-radius: 35px;
+  background: #ffffff;
+  width: 156px;
+  height: 40px;
+}
+
+.search {
+  background: #ffffff;
+  width: 360px;
+  height: 40px;
+  border-radius: 35px;
+  margin-left: 8px;
+  border: none;
+  text-decoration: none;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 36px;
+  color: rgb(166, 166, 166);
+}
+
+.search-card {
+  margin-inline: auto;
+}
+
+iframe.nobord {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  height: 100%;
+  width: 100%; /*абы какое*/
+}
+
+.content {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-button: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.content-catalog {
+  @import url("https://fonts.googleapis.com/css2?   family=Open+Sans:wght@400;700;800&display=swap");
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+  margin-left: -270px;
+  color: #000000;
+}
+.content-wears {
+  display: flex;
+  position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.wears {
+  margin-top: 12px;
+  display: flex;
+}
+.item {
+  position: absolute;
+  border-radius: 25px;
+  background: #fff;
+  width: 170px;
+  height: 130px;
+  margin-left: 4px;
+}
+.itemimg {
+  position: ;
+  margin-top: 25px;
+  width: 75%;
+}
+.one {
+  position: reletive;
+  margin-top: 90px;
+  border-radius: 20px;
+  background: #3e3e3e;
+  width: 170px;
+  height: 148px;
+  margin-left: 4px;
+}
+.item-text {
+  position: absolute;
+  padding: 0px;
+  margin: -15px;
+  padding-left: 10px;
+  width: 157px;
+  margin-left: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: left;
+}
+.operations {
+  position: absolute;
+  width: 170px;
+  height: 52px;
+  padding-top: 10px;
+}
+.item-price {
+  padding-top: 30px;
+  padding-left: 10px;
+  width: 170px;
+  height: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #ffffff;
+}
+.buy {
+  background: #d3d3d3;
+  border-radius: 25px;
+  width: 162px;
+  height: 32px;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background: #f4f4f5;
+        color: var(--tg-theme-text-color);
+        flex-direction: column;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .img {
+        width: 80%;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 40px;
+      }
+      .background {
+        background: #ffff;
+        height: 320px;
+        border-radius: 35px;
+        overflow-y: clip;
+      }
+
+      .price-product {
+        color: black;
+        font-size: 26px;
+        margin-top: 24px;
+        margin-bottom: 0px;
+        text-align: left;
+        height: 48px;
+        border-bottom: 1px solid #e4e4e4;
+        margin-left: 0px;
+        padding-left: 20px;
+      }
+      .size-text {
+        display: flex;
+        padding-left: 24px;
+      }
+      .size-text h4 {
+        text-align: right;
+      }
+      .name-product {
+        color: black;
+        font-size: 22px;
+        align-items: none;
+        margin-left: 20px;
+      }
+      #size {
+        height: 51.8px;
+        border-radius: 15px;
+        background: #fff;
+        border: 1px solid #e4e4e4;
+      }
+      .swiper {
+        width: auto;
+        height: auto;
+        padding-left: 24px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img
+      class="img"
+      src="https://gosneakers.ru/wa-data/public/shop/products/76/15/1576/images/6315/6315.440@2x.jpg"
+    />
+    <div>
+      <h2 class="name-product">Nike Air Force 1 Low 07 White</h2>
+    </div>
+    <div class="background">
+      <h3 class="price-product bordersolid" id="Test">
+        <b>8 999 ₽ </b>
+      </h3>
+      <div class="size-text">
+        <h3>Размер US, мужской</h3>
+        <h4>Размерная сетка</h4>
+      </div>
+      <element>
+        <div class="mySwiper">
+          <div class="swiper-wrapper">
+            <div
+              onclick="Test.innerText = '8 999 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              6
+            </div>
+            <div
+              onclick="Test.innerText = '3 999 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              7
+            </div>
+            <div
+              onclick="Test.innerText = '6 599 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              8
+            </div>
+            <div
+              onclick="Test.innerText = '3 999 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              9
+            </div>
+            <div
+              onclick="Test.innerText = '6 599 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              9.5
+            </div>
+            <div
+              onclick="Test.innerText = '6 599 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              10
+            </div>
+            <div
+              onclick="Test.innerText = '6 599 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              10.5
+            </div>
+            <div
+              onclick="Test.innerText = '6 599 ₽'"
+              id="size"
+              class="swiper-slide"
+            >
+              11
+            </div>
+          </div>
+        </div>
+      </element>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 8,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
+
+    <script>
+      document.querySelector("#size").addEventListener("click", () => {
+           document.querySelector("#Test").innerText = "8 999 ₽";
+    </script>
+  </body>
+</html>

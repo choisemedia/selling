@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>React App</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+      body {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        align-items: center;
+        background: #f4f4f5;
+
+        flex-direction: column;
+        display: flex;
+        margin: 0px;
+        font-size: 16px;
+      }
+      .btn-search {
+        background: #ffffff;
+        margin-left: 0px;
+        width: 370px;
+        height: 40px;
+        border: 0px;
+        outline: none;
+        padding-left: 30px;
+        font-size: 16px;
+      }
+
+      .card-container {
+        list-style-type: none;
+        margin-top: 1rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      .card-container li a {
+        margin-block: 0rem;
+        border-bottom: 1px solid #e4e4e4;
+        color: #000000;
+        padding: 0.5rem;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Поиск"
+      class="btn-search"
+    />
+
+    <ul id="myUL" class="card-container">
+      <li>
+        <a href="https://hyc6fv.csb.app/pages.html">Adidas</a>
+      </li>
+      <li>
+        <a href="#">New balance</a>
+      </li>
+
+      <li>
+        <a href="#">Nike</a>
+      </li>
+      <li>
+        <a href="#">Reebok</a>
+      </li>
+
+      <li>
+        <a href="#">Puma</a>
+      </li>
+      <li>
+        <a href="#">Jordan</a>
+      </li>
+      <li>
+        <a href="#">Converse</a>
+      </li>
+      <li>
+        <a href="#">Asics</a>
+      </li>
+      <li>
+        <a href="#">Converse</a>
+      </li>
+    </ul>
+    <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
